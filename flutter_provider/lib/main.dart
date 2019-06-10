@@ -14,9 +14,9 @@ void main() {
 class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<User>.controller(
+    return StreamProvider<User>(
       initialData: User.initial(),
-      builder: (context) => locator<AuthenticationService>().userController,
+      builder: (context) => locator<AuthenticationService>().user,
       child: MaterialApp(
         title: 'Flutter Provider',
         theme: ThemeData(),

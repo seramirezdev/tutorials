@@ -7,7 +7,8 @@ import 'package:flutter_provider/locator.dart';
 class AuthenticationService {
   Api _api = locator<Api>();
 
-  StreamController<User> userController = StreamController<User>();
+  StreamController<User> _userController = StreamController<User>();
+  Stream<User> get user => _userController.stream;
 
   Future<bool> login(int userId) async {
     var fetchedUser = await _api.getUserProfile(userId);
@@ -15,9 +16,13 @@ class AuthenticationService {
     var hasUser = fetchedUser != null;
 
     if (hasUser) {
-      userController.add(fetchedUser);
+      _userController.add(fetchedUser);
     }
 
     return hasUser;
+  }
+
+  dispose() {
+    _userController.close();
   }
 }

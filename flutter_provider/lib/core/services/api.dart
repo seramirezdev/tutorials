@@ -7,13 +7,13 @@ import 'package:http/http.dart' as http;
 
 /// The service responsible for networking requests
 class Api {
-  static const endpoint = 'https://jsonplaceholder.typicode.com';
+  static const _endpoint = 'https://jsonplaceholder.typicode.com';
 
-  var client = new http.Client();
+  var _client = new http.Client();
 
   Future<User> getUserProfile(int userId) async {
     // Get user profile for id
-    var response = await client.get('$endpoint/users/$userId');
+    var response = await _client.get('$_endpoint/users/$userId');
     
     Map userJson = json.decode(response.body);
     User user;
@@ -27,7 +27,7 @@ class Api {
   Future<List<Post>> getPostsForUser(int userId) async {
     var posts = List<Post>();
     // Get user posts for id
-    var response = await client.get('$endpoint/posts?userId=$userId');
+    var response = await _client.get('$_endpoint/posts?userId=$userId');
 
     // parse into List
     var parsed = json.decode(response.body) as List<dynamic>;
@@ -44,7 +44,7 @@ class Api {
     var comments = List<Comment>();
 
     // Get comments for post
-    var response = await client.get('$endpoint/comments?postId=$postId');
+    var response = await _client.get('$_endpoint/comments?postId=$postId');
 
     // Parse into List
     var parsed = json.decode(response.body) as List<dynamic>;
@@ -55,5 +55,9 @@ class Api {
     }
 
     return comments;
+  }
+
+  void dispose() {
+    _client.close();
   }
 }

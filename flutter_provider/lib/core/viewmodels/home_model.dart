@@ -1,17 +1,17 @@
 import 'package:flutter_provider/core/enums/view_state.dart';
 import 'package:flutter_provider/core/models/post.dart';
-import 'package:flutter_provider/core/services/api.dart';
+import 'package:flutter_provider/core/services/posts_service.dart';
 import 'package:flutter_provider/core/viewmodels/base_model.dart';
 import 'package:flutter_provider/locator.dart';
 
 class HomeModel extends BaseModel {
-  Api _api = locator<Api>();
+  PostsService _postsService = locator<PostsService>();
 
-  List<Post> posts;
+  List<Post> get posts => _postsService.posts;
 
   Future getPosts(int userId) async {
     setState(ViewState.Busy);
-    posts = await _api.getPostsForUser(userId);
+    await _postsService.getPostsForUser(userId);
     setState(ViewState.Idle);
-  } 
+  }
 }
