@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:flutter_provider/core/models/user.dart';
-import 'package:flutter_provider/core/services/api.dart';
-import 'package:flutter_provider/locator.dart';
+import 'package:flutter_provider_no_get_it/core/models/user.dart';
+import 'package:flutter_provider_no_get_it/core/services/api.dart';
+import 'package:flutter_provider_no_get_it/locator.dart';
 
 class AuthenticationService {
   Api _api = locator<Api>();

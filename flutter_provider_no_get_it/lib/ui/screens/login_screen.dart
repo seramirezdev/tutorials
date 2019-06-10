@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_provider/core/enums/view_state.dart';
-import 'package:flutter_provider/core/viewmodels/login_model.dart';
-import 'package:flutter_provider/ui/screens/base_screen.dart';
-import 'package:flutter_provider/ui/shared/app_colors.dart' as colorsApp;
-import 'package:flutter_provider/ui/widgets/login_header.dart';
+import 'package:flutter_provider_no_get_it/core/enums/view_state.dart';
+import 'package:flutter_provider_no_get_it/core/viewmodels/login_model.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/base_screen.dart';
+import 'package:flutter_provider_no_get_it/ui/shared/app_colors.dart' as colorsApp;
+import 'package:flutter_provider_no_get_it/ui/widgets/login_header.dart';
 
 class LoginScreen extends StatelessWidget {
   final TextEditingController _editingController = TextEditingController();

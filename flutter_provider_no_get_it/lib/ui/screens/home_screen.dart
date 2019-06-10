@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_provider/core/enums/view_state.dart';
-import 'package:flutter_provider/core/models/post.dart';
-import 'package:flutter_provider/core/models/user.dart';
-import 'package:flutter_provider/core/viewmodels/home_model.dart';
-import 'package:flutter_provider/ui/screens/base_screen.dart';
-import 'package:flutter_provider/ui/shared/app_colors.dart' as colorsApp;
-import 'package:flutter_provider/ui/shared/text_styles.dart';
-import 'package:flutter_provider/ui/shared/ui_helpers.dart';
-import 'package:flutter_provider/ui/widgets/post_list_item.dart';
+import 'package:flutter_provider_no_get_it/core/enums/view_state.dart';
+import 'package:flutter_provider_no_get_it/core/models/post.dart';
+import 'package:flutter_provider_no_get_it/core/models/user.dart';
+import 'package:flutter_provider_no_get_it/core/viewmodels/home_model.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/base_screen.dart';
+import 'package:flutter_provider_no_get_it/ui/shared/app_colors.dart' as colorsApp;
+import 'package:flutter_provider_no_get_it/ui/shared/text_styles.dart';
+import 'package:flutter_provider_no_get_it/ui/shared/ui_helpers.dart';
+import 'package:flutter_provider_no_get_it/ui/widgets/post_list_item.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {

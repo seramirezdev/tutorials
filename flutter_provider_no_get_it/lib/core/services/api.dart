@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:flutter_provider/core/models/comment.dart';
-import 'package:flutter_provider/core/models/post.dart';
-import 'package:flutter_provider/core/models/user.dart';
+import 'package:flutter_provider_no_get_it/core/models/comment.dart';
+import 'package:flutter_provider_no_get_it/core/models/post.dart';
+import 'package:flutter_provider_no_get_it/core/models/user.dart';
 import 'package:http/http.dart' as http;
 
 /// The service responsible for networking requests

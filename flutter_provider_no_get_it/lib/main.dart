@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_provider/core/models/user.dart';
-import 'package:flutter_provider/core/services/authentication_service.dart';
-import 'package:flutter_provider/locator.dart';
-import 'package:flutter_provider/ui/router.dart';
+import 'package:flutter_provider_no_get_it/core/models/user.dart';
+import 'package:flutter_provider_no_get_it/core/services/authentication_service.dart';
+import 'package:flutter_provider_no_get_it/locator.dart';
+import 'package:flutter_provider_no_get_it/ui/router.dart';
 import 'package:provider/provider.dart';
 
 void main() {

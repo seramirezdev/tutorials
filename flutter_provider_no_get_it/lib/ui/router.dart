@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_provider/core/models/post.dart';
-import 'package:flutter_provider/ui/screens/home_screen.dart';
-import 'package:flutter_provider/ui/screens/login_screen.dart';
-import 'package:flutter_provider/ui/screens/post_screen.dart';
+import 'package:flutter_provider_no_get_it/core/models/post.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/home_screen.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/login_screen.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/post_screen.dart';
 
 class Router {
   static final String initialRoute = 'login';

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_provider/core/enums/view_state.dart';
-import 'package:flutter_provider/core/models/comment.dart';
-import 'package:flutter_provider/core/viewmodels/comments_model.dart';
-import 'package:flutter_provider/ui/screens/base_screen.dart';
-import 'package:flutter_provider/ui/shared/app_colors.dart';
-import 'package:flutter_provider/ui/shared/ui_helpers.dart';
+import 'package:flutter_provider_no_get_it/core/enums/view_state.dart';
+import 'package:flutter_provider_no_get_it/core/models/comment.dart';
+import 'package:flutter_provider_no_get_it/core/viewmodels/comments_model.dart';
+import 'package:flutter_provider_no_get_it/ui/screens/base_screen.dart';
+import 'package:flutter_provider_no_get_it/ui/shared/app_colors.dart';
+import 'package:flutter_provider_no_get_it/ui/shared/ui_helpers.dart';
 
 class Comments extends StatelessWidget {
   final int postId;

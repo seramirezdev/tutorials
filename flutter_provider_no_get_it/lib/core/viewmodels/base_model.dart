@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_provider/core/enums/view_state.dart';
+import 'package:flutter_provider_no_get_it/core/enums/view_state.dart';
 
 class BaseModel extends ChangeNotifier {
   ViewState _state = ViewState.Idle;

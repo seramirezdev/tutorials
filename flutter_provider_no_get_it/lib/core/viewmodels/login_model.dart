@@ -1,7 +1,7 @@
-import 'package:flutter_provider/core/enums/view_state.dart';
-import 'package:flutter_provider/core/services/authentication_service.dart';
-import 'package:flutter_provider/core/viewmodels/base_model.dart';
-import 'package:flutter_provider/locator.dart';
+import 'package:flutter_provider_no_get_it/core/enums/view_state.dart';
+import 'package:flutter_provider_no_get_it/core/services/authentication_service.dart';
+import 'package:flutter_provider_no_get_it/core/viewmodels/base_model.dart';
+import 'package:flutter_provider_no_get_it/locator.dart';
 
 class LoginModel extends BaseModel {
   final AuthenticationService _authenticationService =
